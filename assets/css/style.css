@@ -368,3 +368,18 @@ body {
         margin-bottom: 20px;
     }
 }
+
+
+
+.contact-info a {
+    font-weight: bold; /* Make links bold */
+    color: #007bff; /* Bootstrap primary blue */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-info a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
