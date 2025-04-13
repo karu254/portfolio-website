@@ -4,20 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certifications | My Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .navbar-brand-logo {
+            height: 40px; /* Adjust height as needed */
+            width: 40px;  /* Ensure it's square for the circle */
+            object-fit: cover; /* Crop image nicely */
+            border: 2px solid var(--primary-color, #007bff); /* Match border style */
+            padding: 2px; /* Small space between image and border */
+            background-color: white; /* Handle transparency */
+        }
+         /* Ensure cert cards have consistent height */
+        .cert-card {
+             height: 100%;
+             display: flex;
+             flex-direction: column;
+         }
+         .cert-card p:last-of-type {
+            margin-bottom: 1.5rem; /* Ensure space before button */
+         }
+         .cert-card a.btn {
+             margin-top: auto; /* Push button to bottom */
+         }
+    </style>
 </head>
 <body>
 
-    <!-- Navbar -->
     <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">My Portfolio</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/profile.png" alt="Logo" class="rounded-circle navbar-brand-logo">
+                 </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
@@ -28,73 +55,105 @@
         </div>
     </header>
 
-    <!-- Certifications Section -->
-    <section class="certifications py-5">
-        <div class="container">
-            <h2 class="text-center fw-bold">Certifications</h2>
-            <p class="text-center">Recognitions of my expertise in data analysis and related fields.</p>
-            
-            <div class="row mt-4">
-                <!-- Certification 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="cert-card shadow-sm p-3">
-                        <h4 class="fw-bold">Data Analysis with Python</h4>
-                        <p><strong>Issued by:</strong> IBM</p>
-                        <p><strong>Year:</strong> 2024</p>
-                        <a href="https://www.coursera.org/account/accomplishments/certificate/example" target="_blank" class="btn btn-outline-primary">View Certificate</a>
+    <section class="certifications py-5 bg-light"> <div class="container">
+            <h2 class="text-center fw-bold section-title" data-aos="fade-down">Certifications</h2>
+            <p class="text-center section-subtitle mb-5" data-aos="fade-down" data-aos-delay="100">Credentials validating my skills and knowledge.</p>
+
+            <div class="row mt-4 justify-content-center gy-4">
+
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-card p-3 w-100 shadow-sm"> 
+                        <h4 class="fw-bold">Data Analysis</h4>
+                        <p><strong>Issued by:</strong> Datacamp</p>
+                        <p><strong>Date:</strong> March 6, 2024</p>
+                        <a href="https://coursera.org/verify/K8UHCG5Q2CTB" target="_blank" class="btn btn-outline-primary">Verify Certificate</a>
                     </div>
                 </div>
 
-                <!-- Certification 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="cert-card shadow-sm p-3">
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-card p-3 w-100 shadow-sm">
                         <h4 class="fw-bold">SQL for Data Science</h4>
                         <p><strong>Issued by:</strong> Coursera</p>
                         <p><strong>Year:</strong> 2023</p>
-                        <a href="https://www.coursera.org/account/accomplishments/certificate/example" target="_blank" class="btn btn-outline-primary">View Certificate</a>
+                        <a href="#" target="_blank" class="btn btn-outline-primary">View Certificate</a>
                     </div>
                 </div>
 
-                <!-- Certification 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="cert-card shadow-sm p-3">
-                        <h4 class="fw-bold">Advanced Excel for Business</h4>
-                        <p><strong>Issued by:</strong> Udemy</p>
-                        <p><strong>Year:</strong> 2023</p>
-                        <a href="https://www.udemy.com/certificate/example" target="_blank" class="btn btn-outline-primary">View Certificate</a>
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+                    <div class="cert-card p-3 w-100 shadow-sm">
+                         <h4 class="fw-bold">Data Analysis with Python</h4>
+                        <p><strong>Issued by:</strong> IBM</p>
+                        <p><strong>Year:</strong> 2024</p>
+                        <a href="#" target="_blank" class="btn btn-outline-primary">View Certificate</a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+
+
+    <section class="certifications py-5 bg-light"> <div class="container">
+        <!-- <h2 class="text-center fw-bold section-title" data-aos="fade-down">Certifications</h2> -->
+        <!-- <p class="text-center section-subtitle mb-5" data-aos="fade-down" data-aos-delay="100">Credentials validating my skills and knowledge.</p> -->
+
+        <div class="row mt-4 justify-content-center gy-4">
+
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                <div class="cert-card p-3 w-100 shadow-sm"> 
+                    <h4 class="fw-bold">Data Analysis</h4>
+                    <p><strong>Issued by:</strong> Datacamp</p>
+                    <p><strong>Date:</strong> March 6, 2024</p>
+                    <a href="https://coursera.org/verify/K8UHCG5Q2CTB" target="_blank" class="btn btn-outline-primary">Verify Certificate</a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                <div class="cert-card p-3 w-100 shadow-sm">
+                    <h4 class="fw-bold">SQL for Data Science</h4>
+                    <p><strong>Issued by:</strong> Coursera</p>
+                    <p><strong>Year:</strong> 2023</p>
+                    <a href="#" target="_blank" class="btn btn-outline-primary">View Certificate</a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+                <div class="cert-card p-3 w-100 shadow-sm">
+                     <h4 class="fw-bold">Data Analysis with Python</h4>
+                    <p><strong>Issued by:</strong> IBM</p>
+                    <p><strong>Year:</strong> 2024</p>
+                    <a href="#" target="_blank" class="btn btn-outline-primary">View Certificate</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
     <footer>
-        <p class="mb-1">Contact me: 
-            <a href="mailto:your-email@example.com" class="text-white">Email Me 📩</a>
+        <p class="mb-1">Contact me:
+            <a href="mailto:henrykaru77@gmail.com" class="text-white">Email Me 📩</a>
         </p>
         <div class="footer-icons">
-            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.linkedin.com/in/henry-karu-analyst/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/karu64790525" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/karu_ke" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@karu254" target="_blank"><i class="fab fa-tiktok"></i></a>
         </div>
-        <p class="mb-0">&copy; 2025 My Portfolio | Built with ❤️</p>
+        <p class="mb-0">&copy; 2025 Henry Karu | Built with ❤️</p>
     </footer>
-    <!-- Font Awesome for Icons -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
-    <!-- Bootstrap JS -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>    
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, // Animation duration
+            once: true // Whether animation should happen only once - while scrolling down
+        });
+    </script>
     <script src="assets/js/script.js"></script>
-
-   
 </body>
 </html>
