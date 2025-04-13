@@ -265,6 +265,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* Add this rule specifically for index.html content */
+.hero, .featured { /* Target sections on index.html */
+    flex-grow: 1; /* Allows these sections to expand vertically */
+}
+
+/* Ensure other pages' main content also grows (already suggested previously) */
+.about, .projects, .certifications, .contact {
+    flex: 1; /* This shorthand includes flex-grow: 1 */
+}
+
+
+
 /* --- Footer --- */
 footer {
     background: var(--secondary-color); /* Use dark slate */
