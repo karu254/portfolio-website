@@ -346,3 +346,38 @@ footer .text-white:hover {
     .section-title { font-size: 1.8rem; }
     footer p { font-size: 0.85rem; }
 }
+
+
+/* --- Project Thumbnail Expansion Effect --- */
+/* This CSS will create a hover effect for the project thumbnails */
+/* Adjust the thumbnail size and border color as needed */
+/* Style for the container of the image */
+.project-image-container {
+    width: 100%; /* Container takes the full width of its parent */
+    display: flex; /* Use flexbox to center the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    /* You might want to set a min-height here if you want a consistent area for the thumbnail */
+    /* min-height: 100px; */
+}
+
+.project-thumbnail {
+    width: 80px; /* Initial thumbnail size */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid green; /* Green border */
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out; /* Smooth transition for size */
+    cursor: pointer; /* Indicate it's interactive */
+    object-fit: contain; /* Ensure the entire image is visible within its bounds */
+}
+
+.project-image-container:hover .project-thumbnail {
+    width: 70%; /* Expand to 70% of the container width on hover */
+    /* Height will adjust automatically due to height: auto and object-fit: contain */
+}
+
+/* Ensure the card hides overflowing content */
+.project-card {
+    overflow: hidden;
+}
+
+
